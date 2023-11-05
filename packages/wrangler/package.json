@@ -1,5 +1,5 @@
 {
-	"name": "wrangler",
+	"name": "@askcodebase/wrangler",
 	"version": "3.15.0",
 	"description": "Command-line interface for all things Cloudflare Workers",
 	"keywords": [
@@ -103,7 +103,7 @@
 	"dependencies": {
 		"@cloudflare/kv-asset-handler": "^0.2.0",
 		"@esbuild-plugins/node-globals-polyfill": "^0.2.3",
-		"@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+		"@esbuild-plugins/node-modules-polyfill": "npm:@askcodebase/node-modules-polyfill@^0.2.2",
 		"blake3-wasm": "^2.1.5",
 		"chokidar": "^3.5.3",
 		"esbuild": "0.17.19",
