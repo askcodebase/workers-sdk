@@ -1196,8 +1196,8 @@ importers:
         specifier: ^0.2.3
         version: 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill':
-        specifier: npm:@askcodebase/node-modules-polyfill@^0.2.4
-        version: /@askcodebase/node-modules-polyfill@0.2.4(esbuild@0.17.19)
+        specifier: npm:@askcodebase/node-modules-polyfill@^0.2.5
+        version: /@askcodebase/node-modules-polyfill@0.2.5(esbuild@0.17.19)
       blake3-wasm:
         specifier: ^2.1.5
         version: 2.1.5
@@ -1518,18 +1518,18 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@askcodebase/node-modules-polyfill@0.2.4(esbuild@0.17.19):
-    resolution: {integrity: sha512-PiIrAwARI20f0LrM25Znf7cy/4bvHuzqxSWbjp71hfXaaohiheg8HGJPNeSpvPIBEEKHcqBNf/+jycwg4zo84A==}
+  /@askcodebase/node-modules-polyfill@0.2.5(esbuild@0.17.19):
+    resolution: {integrity: sha512-Ejw8Ead7zBJu54xRhri7Mkjlym3t591PTD0qS5ZpenlBcjBajw74c+Nj3QRcj972l+0AeFzOCsdGleHLFZvHQQ==}
     peerDependencies:
       esbuild: '*'
     dependencies:
       esbuild: 0.17.19
       escape-string-regexp: 4.0.0
-      rollup-plugin-node-polyfills: /@askcodebase/rollup-plugin-node-polyfills@0.2.2
+      rollup-plugin-node-polyfills: /@askcodebase/rollup-plugin-node-polyfills@0.2.3
     dev: false
 
-  /@askcodebase/rollup-plugin-node-polyfills@0.2.2:
-    resolution: {integrity: sha512-T4DWMC8oqs2ZDJYKOidmlZmsdiib6nJfDi0DbkHBowSUIehW+jiWuabqZCvBP40v2vysN1ma7I66VOXk3tG5ew==}
+  /@askcodebase/rollup-plugin-node-polyfills@0.2.3:
+    resolution: {integrity: sha512-hLOtgqA9BZ64vTvtG0pAo+UhUk7ERd6xEoxPE5HrcA2UqmD3VecMO+yxxa4L+r3z/+cdTh1yuKvI6psvLGv+Qg==}
     dependencies:
       rollup-plugin-inject: 3.0.2
     dev: false
