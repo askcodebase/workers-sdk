@@ -1,5 +1,6 @@
 import { URL } from "node:url";
 import { fetch } from "undici";
+import { HttpsProxyAgent } from "https-proxy-agent";
 import { fetchResult } from "../cfetch";
 import { createWorkerUploadForm } from "../deployment-bundle/create-worker-upload-form";
 import { logger } from "../logger";
@@ -162,8 +163,11 @@ export async function createPreviewSession(
 
 	logger.debug(`-- START EXCHANGE API REQUEST: GET ${switchedExchangeUrl}`);
 	logger.debug("-- END EXCHANGE API REQUEST");
+	const proxy = process.env.WRANGLER_HTTPS_PROXY;
+	const proxyOptions = proxy ? { agent: new HttpsProxyAgent(proxy) } : {};
 	const exchangeResponse = await fetch(switchedExchangeUrl, {
 		signal: abortSignal,
+		...proxyOptions,
 	});
 	const bodyText = await exchangeResponse.text();
 	logger.debug(
